@@ -1,0 +1,21 @@
+<% if @genres.errors.any? %>
+  <h2>There were errors saving your genre</h2>
+  <ul>
+    <% @genres.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+<%= form_for @genres do |g| %>
+  <fieldset>
+    <div class='fields'>
+      <%= g.label :name %>
+      <%= g.text_field :name %>
+    </div>
+  </fieldset>
+  <%= g.submit %>
+<% end %>
+
+<br/>

@@ -1,0 +1,125 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+.header{
+	height: 50%;
+	width:100%;
+	background-color: black;
+}
+
+.header2 {
+	background: grey;
+}
+
+.title {
+	color:yellow;
+	font-size: 34px;
+	float:left;
+}
+.margintabs{
+	margin-left: 19%;
+	float:right;
+	margin-top: 1%;
+	margin-left: 10%;
+}
+
+.nav__anchor {
+	color: white;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+.nav--important {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.find {
+	color:white;
+	font-family: "merriweather";
+	font-size: 20px;
+	background-color: black;
+}
+
+
+.tabs {
+	color:white;
+	font-family: "merriweather";
+	font-size: 20px;
+	background-color: black;
+}
+
+.black {
+	background: black;
+}
+
+footer{
+	padding: 12.5px;
+	background-color: black;
+	position:fixed;
+	bottom:0;
+}
+
+.has_padding {
+	padding: 2.5px 0px;
+}
+
+.wrapper{
+	width: 1296px;
+	margin:0 auto;
+}
+
+.tagline{
+	padding-top: 39px;
+	padding-bottom: 36px;
+	text-align: center;
+	margin-right: 200px;
+}
+
+.type--oswald {
+	font-family: 'oswald', sans-serif
+}
+
+.type--merriweather{
+	font-family: 'merriweather'
+}
+
+.type--1{
+	font-family: 'souce sans pro', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+.type--2 {
+	font-size: 25px;
+	font-style: italic;
+}
+
+.type--strike{
+	text-decoration: line-through;
+}
+
+.content_landing {
+	text-align: left;
+	font-weight: bold;
+	padding-top: 39px;
+	padding-bottom: 36px;
+	margin-right: 200px;
+
+}
